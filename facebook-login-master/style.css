@@ -1,0 +1,110 @@
+:root {
+  --primary-color: #1877f2;
+  --secondary-color: #42b72a;
+  --input-bg: #dddfe2;
+  --root-bg: #f0f2f5;
+}
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: var(--root-bg);
+}
+main {
+  display: flex;
+  width: 100%;
+  padding-top: 2%;
+  margin: auto;
+  height: 100vh;
+}
+main > * {
+  width: 50%;
+}
+aside {
+  margin: 12% 0 0 15%;
+  padding-right: 50px;
+}
+aside h1 {
+  font-size: 28px;
+  font-weight: 400;
+}
+aside img {
+  width: 300px;
+  margin-left: -30px;
+}
+section div {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 12px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgb(206, 203, 203);
+}
+section {
+  padding-right: 150px;
+  margin: auto;
+}
+section input {
+  padding: 15px;
+  border: 1px solid var(--input-bg);
+  border-radius: 5px;
+}
+section input:focus::placeholder {
+  opacity: 0.5;
+}
+section > * {
+  width: 80%;
+}
+#login {
+  background: var(--primary-color);
+  border: none;
+  padding: 10px;
+  margin: 4px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+#signup {
+  background: var(--secondary-color);
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 4px auto;
+  font-weight: 500;
+  width: max-content;
+  color: white;
+}
+section > div > a {
+  font-size: 14px;
+  margin: auto;
+  text-decoration: none;
+  width: max-content;
+}
+section > div > a:hover {
+  text-decoration: underline;
+}
+hr {
+  margin: 14px 0;
+  border: none;
+  height: 1px;
+  background-color: var(--input-bg);
+}
+section > p {
+  text-align: center;
+  margin: 27px;
+  font-size: 14px;
+}
+section > p > a {
+  text-decoration: none;
+  color: black;
+}
+section > p > a:hover {
+  text-decoration: underline;
+}
